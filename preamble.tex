@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[letter, total={7in, 9.5in}]{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+
+\RequirePackage{mathpazo}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=red,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\urlstyle{same}
+
+
+\newcommand{\Name}[1]{
+\noindent
+\huge{#1}
+\vspace{0.05in}
+%\par
+\normalsize
+}
+
+\newcommand{\ContactInfo}[5]{
+\noindent
+#1 #2 #3 $\mid$ #4 $\mid$ #5
+%\par
+}
+
+
+\newcommand{\Class}[4]{{\bf #1:} #2 (#3), ({\em #4})}
+
+\newcommand{\ClassNoSkills}[3]{{\bf #1:} #2 (#3)}
+
+\newcommand{\ClassInProgress}[3]{{\bf #1:} #2 ({\em#3})}
+
+\newcommand{\ClassInProgressNoSkills}[2]{{\bf #1:} #2}
+
+\newcommand{\cvhline}{
+\vspace{0.1in}
+\hline
+\vspace{-0.1in}}
+
+\newcommand{\cvhlineb}[]{
+\hline
+\vspace{-0.1in}}
+
+
+\newcommand{\secvspace}{\vspace{-0.1in}}
+
+\newcommand{\WorkExpURL}[1]{\small(\url{#1})\normalsize}
+
+\pagenumbering{gobble}
+
